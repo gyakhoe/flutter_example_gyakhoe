@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'dart:developer' as developer;
 
+import 'package:flutter_example_gyakhoe/login/login.dart';
+
 class MainMenuPage extends StatelessWidget {
   final String title;
   const MainMenuPage({super.key, required this.title});
@@ -12,7 +14,8 @@ class MainMenuPage extends StatelessWidget {
       appBar: AppBar(title: Text(title)),
       body: ListView(children: [
         MaterialButton(
-          onPressed: () => developer.log('The login UI button is tapped'),
+          onPressed: () => Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const LoginPage())),
           color: Colors.blue,
           hoverColor: Colors.black,
           child: const Text(
