@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'dart:developer' as developer;
 
 import 'package:flutter_example_gyakhoe/login/login.dart';
 
